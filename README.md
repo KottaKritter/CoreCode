@@ -6,6 +6,13 @@ It is both, the code is first compiled into bycode that the Java Runtime Envirom
 Enter value in El Salvador color currency
 Multiple entered value by 0.1142
 Print result in USD.
+```
+
+sv = input("Enter amount in colones: ")
+usd = int(sv) * (0.1142)
+print("The amount in US dollar is: " + str(usd))
+
+```
 ### Why is pseudocode helpful?
 It allows you to organize your ideas and to decide how the code will actually work, by just adding the steps to it. It helps understand how the code will work or what the code will do without having to actually write it.
 ### Pseudo code to calculate age based on year. 
@@ -34,7 +41,6 @@ Bynary = 1100101011111110
 Hexadecimal = 0xCAFE
 
 ### Create a program to add two numbers given by the user
-
 ```
 
 .data
@@ -72,10 +78,8 @@ Hexadecimal = 0xCAFE
 		syscall
 		
 ```
-    
- ###  Create a program that display your name
- 
- ```
+###  Create a program that display your name
+```
  
  .data
 	name: .asciiz "\nRicardo Segovia"
