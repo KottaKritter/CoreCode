@@ -35,6 +35,8 @@ Hexadecimal = 0xCAFE
 
 ### Create a program to add two numbers given by the user
 
+```
+
 .data
 	number1: .asciiz "\nEnter a number: "
 	number2: .asciiz "\nEnter another number: "
@@ -68,8 +70,12 @@ Hexadecimal = 0xCAFE
 		li $v0, 1
 		move $a0, $t2
 		syscall
+		
+```
     
  ###  Create a program that display your name
+ 
+ ```
  
  .data
 	name: .asciiz "\nRicardo Segovia"
@@ -79,3 +85,5 @@ Hexadecimal = 0xCAFE
 		li $v0, 4
 		la $a0, name
 		syscall
+		
+```
