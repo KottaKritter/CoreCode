@@ -91,3 +91,7 @@ Hexadecimal = 0xCAFE
 		syscall
 		
 ```
+## Week 1 Thursday Challenges
+
+### What are real word applications of Javascript
+JavaScript is comminly used for creating web pages. It allows us to add dynamic behavior to the webpage and add special effects to the webpage. On websites, it is mainly used for validation purposes. JavaScript helpds us to execute complex actions and also enables the interaction of websites with visitors.
