@@ -1,4 +1,10 @@
 # CoreCode
+
+- [Tuesday](#week-1-tuesday-challenges)
+- [Wednesday](#week-1-wednesday-challenges)
+- [Thursday](#week-1-thursday-challenges)
+
+
 ## Week 1 Tuesday Challenges
 ### Java language is compiled or interpreted? 
 It is both, the code is first compiled into bycode that the Java Runtime Enviroment(JRE) can understand, and then this bycode is interpreted by the Java Virtual Machine(JVM). The use of bycode makes the intepretation much quicker.
