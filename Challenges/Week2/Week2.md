@@ -138,8 +138,31 @@ function shortcut(string) {
 ```
 
 ### Challenge 3
+```javascript
+
+const rps = (p1, p2) => {
+  if (p1 === p2) return 'Draw!'
+  
+  const rules = { paper: 'rock', rock: 'scissors', scissors: 'paper'}
+  return rules[p1] === p2 ? 'Player 1 won!' : 'Player 2 won!'
+ 
+};
+
+```
 
 ### Challenge 4
+```javascript
+
+function persistence(num) {
+   let i = 0;
+   while (num.toString().length !== 1) {
+     num = num.toString().split("").reduce((a,b)=>a*b);
+     i++;
+   }
+   return i;
+}
+
+```
 
 ### Core Challenge
 
