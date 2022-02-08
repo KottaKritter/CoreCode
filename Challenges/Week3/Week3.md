@@ -49,6 +49,101 @@ decodeMorse = function(morseCode){
 
 ## Week 3 Tuesday Challenges
 
+### Challenge 1
+
+```javascript
+
+function order(sentence){
+   if (sentence) {
+    let finalArr = []
+    sentence.split(' ').forEach(sentence => {
+      let index = Number(sentence.match(/\d+/g));
+      finalArr[index - 1] = sentence
+    })
+    return finalArr.join(' ')
+  }
+  return sentence;
+}
+
+```
+
+### Challenge 2
+```
+
+function duplicateCount(text){
+    let count = 0;
+    let obj = {};
+
+    for (let i of text) {
+        i = i.toLowerCase();
+        if (!obj[i]) {
+            obj[i] = 1;
+        } else {
+            obj[i]++;
+        }
+    }
+    for (let i in obj){
+        if(obj[i] > 1){
+            count++;
+        }
+    }
+    return count;
+}
+
+```
+
+### Challenge 3
+```
+
+function pigIt(str){
+ let newArr = [],
+     strArr = str.split(' ')
+ strArr.forEach(x => {
+   let wordArr = x.split('')
+   wordArr.push(wordArr[0] , 'ay'), wordArr.shift()
+   if(x === '!' || x === '?' || x === '.'){
+     newArr.push(x)
+   }else {
+     newArr.push(wordArr.join(''))
+   }
+ })
+  return newArr.join(' ')
+}
+
+```
+
 ## Week 3 Wednesday Challenges
+
+### Challenge 1
+```
+
+function validParentheses(p) {
+  let stack = [];
+  let closings = {
+    '(': ')',
+  };
+  
+  for (let i = 0; i < p.length; i++) {
+    if (p[i] === '(' ) {
+      stack.push(closings[p[i]])
+      continue;
+    }
+    
+    let requiredElement = stack.pop();
+    
+    if (p[i] !== requiredElement) return false;
+  }
+  
+  if (stack.length > 0) return false;
+  
+  return true;
+};
+
+```
+
+### Challenge 2
+```
+
+```
 
 ## Week 3 Thursday Challenges
