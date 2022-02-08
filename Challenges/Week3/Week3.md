@@ -144,6 +144,97 @@ function validParentheses(p) {
 ### Challenge 2
 ```javascript
 
+function toCamelCase(str){
+  str = str.split('');
+  return str.map(function(c, i){
+    if(c == '-' || c == '_'){
+      c = str[i+1].toUpperCase();
+      str.splice(i+1, 1);
+    }
+    return c;
+  }).join('');
+}
+
+```
+
+### Challenge 3
+```javascript
+
+var uniqueInOrder=function(iterable){
+    let newArr = [];
+    for (let i = 0; i < iterable.length; i++){
+        if (iterable[i] != iterable[i+1]){
+            newArr.push(iterable[i]);
+        }
+    }
+    return newArr;
+}
+
 ```
 
 ## Week 3 Thursday Challenges
+
+### Challenge 1
+```javascript
+
+function foldArray(array, runs){
+  var final = [];
+  var newArray = array.slice();
+
+  while(newArray.length > 1){
+    final.push(newArray[0] + newArray[newArray.length -1]);
+    newArray = newArray.slice(1, newArray.length-1);
+  }
+  if(newArray.length > 0){
+    final.push(newArray[0]); 
+  }
+  if(runs > 1){
+    return foldArray(final, runs-1)
+  }
+  return final;
+}
+
+```
+
+### Challenge 2
+```javascript
+
+function encryptThis(text) {
+  let strArr = text.split(' ');
+  let output = [];
+  
+  strArr.forEach(str => {
+    if (str.length === 1) {
+      output.push(str.charCodeAt(0));
+    } 
+    else {
+      let tempStr = str.split('');
+      tempStr[0] = str.charCodeAt(0);
+      tempStr[1] = str[str.length - 1];
+      tempStr[str.length - 1] = str[1];
+      output.push(tempStr.join(''));
+    }
+  });
+  
+  return output.join(' ');
+}
+
+```
+
+### Challenge 3
+```javascript
+
+function list(names){
+ if (names.length > 1) {
+   return `${otherNames(names)} & ${names[names.length - 1].name}`
+ } else if (names.length === 1) {
+   return names[0].name
+ }
+  return '';
+}
+
+function otherNames(array) {
+  return array.splice(0, array.length - 1).map(person => person.name).join(', ');
+}
+
+```
