@@ -68,7 +68,7 @@ function order(sentence){
 ```
 
 ### Challenge 2
-```
+```javascript
 
 function duplicateCount(text){
     let count = 0;
@@ -93,7 +93,7 @@ function duplicateCount(text){
 ```
 
 ### Challenge 3
-```
+```javascript
 
 function pigIt(str){
  let newArr = [],
@@ -115,7 +115,7 @@ function pigIt(str){
 ## Week 3 Wednesday Challenges
 
 ### Challenge 1
-```
+```javascript
 
 function validParentheses(p) {
   let stack = [];
@@ -142,7 +142,7 @@ function validParentheses(p) {
 ```
 
 ### Challenge 2
-```
+```javascript
 
 ```
 
