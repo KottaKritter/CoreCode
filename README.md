@@ -12,5 +12,4 @@
 - [Week 6️⃣ - Typescript](Challenges/Week6/Week6.md)
 - [Week 7️⃣ - Typescript](Challenges/Week7/Week7.md)
 - [Week 8️⃣ - HTML & CSSS](Challenges/Week8/Week8.md)
-- [Week 9️⃣ - React & Node](Challenges/Week9/Week9.md)
-- [Week 🔟 - Node & Database](Challenges/Week10/Week10.md)
+
