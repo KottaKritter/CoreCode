@@ -146,13 +146,13 @@ export function validBraces(braces: string): boolean {
 
 ### Challenge 4
 
-```typescript
+```javascript
 
 ```
 
 ### Challenge 5
 
-```typescript
+```javascript
 function displayBoard(board, width) {
   let finishBoard = "";
   const rows = board.length / width;
